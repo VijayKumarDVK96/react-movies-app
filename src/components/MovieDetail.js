@@ -21,26 +21,29 @@ const MovieDetail = () => {
     const {id} = useParams();
 
     useEffect(() => {
+
+        const getData = async () => {
+            try {
+                const response = await fetch(
+                    `https://api.themoviedb.org/3/movie/${id}?api_key=4e44d9029b1270a757cddc766a1bcb63&language=en-US`
+                );
+
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+
+                const data = await response.json();
+                setMovie(data);
+            } catch (error) {
+                console.error('Error fetching movie data:', error);
+            }
+        };
+
         getData();
         window.scrollTo(0, 0);
     }, [id]);
 
-    const getData = async () => {
-        try {
-            const response = await fetch(
-                `https://api.themoviedb.org/3/movie/${id}?api_key=4e44d9029b1270a757cddc766a1bcb63&language=en-US`
-            );
-
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-
-            const data = await response.json();
-            setMovie(data);
-        } catch (error) {
-            console.error('Error fetching movie data:', error);
-        }
-    };
+    
 
   return (
         <div className="movie">
