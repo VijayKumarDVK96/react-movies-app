@@ -1,6 +1,6 @@
 # Movies App using React
 
-**DEMO : https://650bc26979b100000819103f--lighthearted-tartufo-620a3c.netlify.app/** 
+**DEMO : https://simple-react-movies-app.netlify.app/** 
 
 Developed a website for movies details based on IMDB records using React
 
