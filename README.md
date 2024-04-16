@@ -5,7 +5,9 @@
 Developed a website for movies details based on IMDB records using React
 
 > **Library:** React
+> 
 > **Dependencies:** React Router Dom, React Loading Skeleton, React Responsive Carousel, Font Awesome
+> 
 > **API:** TMDB movies
 
 #  Functionality
