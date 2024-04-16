@@ -8,10 +8,14 @@ Developed a website for movies details based on IMDB records using React
 > **Dependencies:** React Router Dom, React Loading Skeleton, React Responsive Carousel, Font Awesome
 > **API:** TMDB movies
 
-# Pseudo Code
+#  Functionality
 
- - Initialize api url and credentials, and execute the api using fetch function and display results.
- - Add a carousel and append the popular movies fetched from api.
- - Add a nav menu for movie types such as popular, top rated, upcoming and set the movies to display based on that movie types accordingly.
- - Add a common cards for all movie grid.
- - Add a movie details page to display complete information about the movie based on the api.
+-   **Initialize API:** Set up the API URL and credentials, then execute the API call using the `fetch` function to retrieve movie data and display the results.
+    
+-   **Carousel for Popular Movies:** Implement a carousel to display popular movies fetched from the API.
+    
+-   **Navigation Menu:** Include a navigation menu for movie types such as popular, top-rated, and upcoming. Set the displayed movies based on the selected movie type.
+    
+-   **Common Movie Cards:** Utilize common cards for all movie grids to maintain consistency in the UI.
+    
+-   **Movie Details Page:** Create a page to display complete information about a selected movie based on the API data.
