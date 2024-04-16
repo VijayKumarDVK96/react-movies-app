@@ -128,7 +128,7 @@ body,
     overflow: hidden;
     margin: 0.19rem;
     cursor: pointer;
-    min-width: 200px;
+    min-width: 220px;
     height: 300px;
     z-index: 0;
     border: 1px solid rgb(99, 99, 99);
